@@ -12,7 +12,7 @@ public class Main {
     	  
     	  
         try {
-        	Persona a = new Persona("Juan", 23, "29363557N");       
+        	Persona a = new Persona("Juan", 23, "12346478N");       
             a.mostrarInfo();
             
                    

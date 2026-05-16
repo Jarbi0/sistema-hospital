@@ -39,7 +39,17 @@ public class Persona {
 		return dni;
 	}
 	public void setDni(String dni) {
-		if(!dni.isEmpty() && dni.length() == 9) {
+		if(!dni.isEmpty() && dni.length() == 9 &&
+				Character.isDigit(dni.charAt(0)) &&
+			    Character.isDigit(dni.charAt(1)) &&
+			    Character.isDigit(dni.charAt(2)) &&
+			    Character.isDigit(dni.charAt(3)) &&
+			    Character.isDigit(dni.charAt(4)) &&
+			    Character.isDigit(dni.charAt(5)) &&
+			    Character.isDigit(dni.charAt(6)) &&
+			    Character.isDigit(dni.charAt(7)) &&
+			    Character.isLetter(dni.charAt(8))
+				) {
 			this.dni = dni;
 		}else throw new DniInvalidoException("DNI incorrecto");
 	}
