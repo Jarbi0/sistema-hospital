@@ -10,6 +10,12 @@ public class Consulta {
 
 	
 	
+	public Consulta(Medico medico, Paciente paciente, String fecha) {
+		this.medico = medico;
+		this.paciente = paciente;
+		this.fecha = fecha;
+		
+	}
 	public String getFecha() {
 		return fecha;
 	}
@@ -34,7 +40,8 @@ public class Consulta {
 
 
 	public void mostrarConsulta() {
-		System.out.println("Consulta: " + medico.getNombre() + " con " + paciente.getNombre() +" | Fecha: " + getFecha());
+		System.out.println("Consulta: Dr./a " + medico.getNombre()
+		+ " con " + paciente.getNombre() +"	| Fecha: " + getFecha());
 	}
 	
 	

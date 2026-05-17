@@ -2,13 +2,9 @@ package GestionHospital;
 
 public interface Evaluable {
 
-	static String evaluarEstado(String estado) {
-		return estado;
-	}
-	
-	static int calcularPrioridad(int prioridad) {
-		return prioridad;
-	}
+	String evaluarEstado();
+
+	int calcularPrioridad();
 
 	
 	
@@ -17,13 +13,6 @@ public interface Evaluable {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 }

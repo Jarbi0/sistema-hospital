@@ -32,7 +32,7 @@ public class Persona {
 	public void setEdad(int edad) {
 		if (edad < 120 && edad > 0) {	
 			this.edad = edad;
-		}else throw new EdadInvalidaException("La edad no entra en los parametros");
+		}else throw new EdadInvalidaException("La edad de " + getNombre() + " no entra en los parametros");
 	}
 	
 	public String getDni() {
@@ -51,12 +51,12 @@ public class Persona {
 			    Character.isLetter(dni.charAt(8))
 				) {
 			this.dni = dni;
-		}else throw new DniInvalidoException("DNI incorrecto");
+		}else throw new DniInvalidoException("El DNI de " + getNombre() + " es incorrecto");
 	}
 	
 	
 	public void mostrarInfo() {
-		System.out.println(getNombre() + ", " + getEdad() + " años. DNI: " + getDni());
+		System.out.println("- " + getNombre() + ", " + getEdad() + " años. DNI: " + getDni() + ".");
 	}
 	
 	
